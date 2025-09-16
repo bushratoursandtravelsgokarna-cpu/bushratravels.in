@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow sensitive areas (no admin panel here, but keeping standard practice)
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /junk/
+
+Sitemap: https://bushratravels.in/sitemap.xml
