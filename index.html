@@ -14,9 +14,9 @@ img { max-width:100%; height:auto; display:block; }
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Bushra Tours &amp; Travels - Premium Taxi Service in Gokarna</title>
-<link href="img/favicon.png" rel="icon" type="image/png"/>
-<link href="img/favicon.png" rel="shortcut icon" type="image/png"/>
-<link href="img/favicon.png" rel="apple-touch-icon"/>
+
+
+
 <script defer="True" src="https://cdn.tailwindcss.com"></script>
 <style>
         .hero-pattern {
@@ -158,7 +158,49 @@ img { max-width:100%; height:auto; display:block; }
             }
         }
     </style>
-</head>
+
+<!-- Standard favicon -->
+<link href="favicon.ico" rel="icon" type="image/x-icon"/>
+<!-- PNG favicons -->
+<link href="favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<!-- Apple touch icon -->
+<link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<!-- Android/Chrome icons -->
+<link href="android-chrome-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="android-chrome-512x512.png" rel="icon" sizes="512x512" type="image/png"/>
+<!-- Web manifest -->
+<link href="site.webmanifest" rel="manifest"/>
+<style>
+/* Slideshow + gallery fixed heights */
+#slideshow-container,
+#slideshow-container .slide,
+#gallery .slide,
+#gallery img {
+  height: 400px !important;
+}
+@media (max-width: 768px) {
+  #slideshow-container,
+  #slideshow-container .slide,
+  #gallery .slide,
+  #gallery img {
+    height: 250px !important;
+  }
+}
+#slideshow-container .slide {
+  display: flex;
+  align-items: stretch;
+}
+#slideshow-container .slide > div:first-child {
+  flex: 1;
+}
+#slideshow-container img,
+#gallery img {
+  object-fit: cover !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+</style></head>
 <body class="font-sans">
 <!-- Navigation -->
 <nav class="floating-card fixed w-full z-50 top-2 sm:top-4">
@@ -166,7 +208,7 @@ img { max-width:100%; height:auto; display:block; }
 <div class="flex justify-between items-center h-16 sm:h-20 rounded-2xl">
 <div class="flex items-center">
 <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl mr-2 sm:mr-4 overflow-hidden">
-<picture><source srcset="webp_images/b.webp" type="image/webp"/><img alt="Bushra Tours &amp; Travels Logo" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.innerHTML='&lt;div class=\'w-full h-full bg-gradient-to-br from-blue-600 to-cyan-500 rounded-xl flex items-center justify-center\'&gt;&lt;svg class=\'w-5 h-5 sm:w-6 sm:h-6 text-white\' fill=\'none\' stroke=\'currentColor\' viewBox=\'0 0 24 24\'&gt;&lt;path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'2\' d=\'M13 10V3L4 14h7v7l9-11h-7z\'&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;';" src="img/b.png"/></picture>
+<picture><source srcset="img/b.webp" type="image/webp"/><img alt="Bushra Tours &amp; Travels Logo" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.innerHTML='&lt;div class=\'w-full h-full bg-gradient-to-br from-blue-600 to-cyan-500 rounded-xl flex items-center justify-center\'&gt;&lt;svg class=\'w-5 h-5 sm:w-6 sm:h-6 text-white\' fill=\'none\' stroke=\'currentColor\' viewBox=\'0 0 24 24\'&gt;&lt;path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'2\' d=\'M13 10V3L4 14h7v7l9-11h-7z\'&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;';" src="img/b.png"/></picture>
 </div>
 <h1 class="text-lg sm:text-xl lg:text-2xl font-bold gradient-text">Bushra Tours &amp; Travels</h1>
 </div>
@@ -626,12 +668,12 @@ img { max-width:100%; height:auto; display:block; }
 <!-- Slideshow Container -->
 <div class="relative max-w-4xl mx-auto mb-8 sm:mb-12">
 <div class="floating-card rounded-2xl sm:rounded-3xl overflow-hidden relative">
-<div class="relative h-64 sm:h-80 md:h-96 lg:h-[400px]" id="slideshow-container">
+<div class="relative sm:h-80 md:h-96 lg:h-[400px]" id="slideshow-container">
 <!-- Slide 1 -->
 <div class="slide active">
-<div class="w-full h-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
-<picture><source srcset="webp_images/1.webp" type="image/webp"/><img alt="Taxi in Gokarna - Bushra Tours &amp; Travels Hatchback Cab" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';" onload="this.parentElement.querySelector('.fallback-content').style.display='none';" src="./img/1.jpg"/></picture>
-<div class="fallback-content w-full h-full bg-gradient-to-br from-blue-400 to-cyan-500 flex items-center justify-center" style="display: flex;">
+<div class="w-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
+<picture><source srcset="img/1.webp" type="image/webp"/><img alt="Taxi in Gokarna - Bushra Tours &amp; Travels Hatchback Cab" class="w-full object-cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';" onload="this.parentElement.querySelector('.fallback-content').style.display='none';" src="img/1.jpg"/></picture>
+<div class="fallback-content w-full bg-gradient-to-br from-blue-400 to-cyan-500 flex items-center justify-center" style="display: flex;">
 <div class="text-center text-white">
 <span class="text-6xl mb-4 block">🚗</span>
 <h3 class="text-2xl font-bold mb-2">Bushra Tours &amp; Travels</h3>
@@ -642,9 +684,9 @@ img { max-width:100%; height:auto; display:block; }
 </div>
 <!-- Slide 2 -->
 <div class="slide">
-<div class="w-full h-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
-<picture><source srcset="webp_images/2.webp" type="image/webp"/><img alt="Gokarna Beach Tour Taxi Service - Bushra Tours &amp; Travels" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';" onload="this.parentElement.querySelector('.fallback-content').style.display='none';" src="./img/2.jpg"/></picture>
-<div class="fallback-content w-full h-full bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center" style="display: flex;">
+<div class="w-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
+<picture><source srcset="img/2.webp" type="image/webp"/><img alt="Gokarna Beach Tour Taxi Service - Bushra Tours &amp; Travels" class="w-full object-cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';" onload="this.parentElement.querySelector('.fallback-content').style.display='none';" src="img/2.jpg"/></picture>
+<div class="fallback-content w-full bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center" style="display: flex;">
 <div class="text-center text-white">
 <span class="text-6xl mb-4 block">🏖️</span>
 <h3 class="text-2xl font-bold mb-2">Beach Tours</h3>
@@ -655,9 +697,9 @@ img { max-width:100%; height:auto; display:block; }
 </div>
 <!-- Slide 3 -->
 <div class="slide">
-<div class="w-full h-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
-<picture><source srcset="webp_images/3.webp" type="image/webp"/><img alt="Temple Visit Taxi in Gokarna - Bushra Tours &amp; Travels" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';" onload="this.parentElement.querySelector('.fallback-content').style.display='none';" src="./img/3.jpg"/></picture>
-<div class="fallback-content w-full h-full bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center" style="display: flex;">
+<div class="w-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
+<picture><source srcset="img/3.webp" type="image/webp"/><img alt="Temple Visit Taxi in Gokarna - Bushra Tours &amp; Travels" class="w-full object-cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';" onload="this.parentElement.querySelector('.fallback-content').style.display='none';" src="img/3.jpg"/></picture>
+<div class="fallback-content w-full bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center" style="display: flex;">
 <div class="text-center text-white">
 <span class="text-6xl mb-4 block">🏛️</span>
 <h3 class="text-2xl font-bold mb-2">Temple Visits</h3>
@@ -668,9 +710,9 @@ img { max-width:100%; height:auto; display:block; }
 </div>
 <!-- Slide 4 -->
 <div class="slide">
-<div class="w-full h-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
-<picture><source srcset="webp_images/4.webp" type="image/webp"/><img alt="Airport Taxi in Gokarna - Bushra Tours &amp; Travels" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';" onload="this.parentElement.querySelector('.fallback-content').style.display='none';" src="./img/4.jpg"/></picture>
-<div class="fallback-content w-full h-full bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center" style="display: flex;">
+<div class="w-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
+<picture><source srcset="img/4.webp" type="image/webp"/><img alt="Airport Taxi in Gokarna - Bushra Tours &amp; Travels" class="w-full object-cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';" onload="this.parentElement.querySelector('.fallback-content').style.display='none';" src="img/4.jpg"/></picture>
+<div class="fallback-content w-full bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center" style="display: flex;">
 <div class="text-center text-white">
 <span class="text-6xl mb-4 block">✈️</span>
 <h3 class="text-2xl font-bold mb-2">Airport Transfers</h3>
@@ -681,9 +723,9 @@ img { max-width:100%; height:auto; display:block; }
 </div>
 <!-- Slide 5 -->
 <div class="slide">
-<div class="w-full h-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
-<picture><source srcset="webp_images/5.webp" type="image/webp"/><img alt="Sightseeing Taxi in Gokarna - Bushra Tours &amp; Travels" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';" onload="this.parentElement.querySelector('.fallback-content').style.display='none';" src="./img/5.jpg"/></picture>
-<div class="fallback-content w-full h-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center" style="display: flex;">
+<div class="w-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
+<picture><source srcset="img/5.webp" type="image/webp"/><img alt="Sightseeing Taxi in Gokarna - Bushra Tours &amp; Travels" class="w-full object-cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';" onload="this.parentElement.querySelector('.fallback-content').style.display='none';" src="img/5.jpg"/></picture>
+<div class="fallback-content w-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center" style="display: flex;">
 <div class="text-center text-white">
 <span class="text-6xl mb-4 block">🌄</span>
 <h3 class="text-2xl font-bold mb-2">Sightseeing Tours</h3>
@@ -694,9 +736,9 @@ img { max-width:100%; height:auto; display:block; }
 </div>
 <!-- Slide 6 -->
 <div class="slide">
-<div class="w-full h-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
-<picture><source srcset="webp_images/6.webp" type="image/webp"/><img alt="Group Travel Taxi in Gokarna - Bushra Tours &amp; Travels" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';" onload="this.parentElement.querySelector('.fallback-content').style.display='none';" src="./img/6.jpg"/></picture>
-<div class="fallback-content w-full h-full bg-gradient-to-br from-teal-400 to-blue-500 flex items-center justify-center" style="display: flex;">
+<div class="w-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
+<picture><source srcset="img/6.webp" type="image/webp"/><img alt="Group Travel Taxi in Gokarna - Bushra Tours &amp; Travels" class="w-full object-cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';" onload="this.parentElement.querySelector('.fallback-content').style.display='none';" src="img/6.jpg"/></picture>
+<div class="fallback-content w-full bg-gradient-to-br from-teal-400 to-blue-500 flex items-center justify-center" style="display: flex;">
 <div class="text-center text-white">
 <span class="text-6xl mb-4 block">🚐</span>
 <h3 class="text-2xl font-bold mb-2">Group Travel</h3>
@@ -707,9 +749,9 @@ img { max-width:100%; height:auto; display:block; }
 </div>
 <!-- Slide 7 -->
 <div class="slide">
-<div class="w-full h-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
-<picture><source srcset="webp_images/7.webp" type="image/webp"/><img alt="Coastal Tour Taxi in Gokarna - Bushra Tours &amp; Travels" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';" onload="this.parentElement.querySelector('.fallback-content').style.display='none';" src="./img/7.jpg"/></picture>
-<div class="fallback-content w-full h-full bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center" style="display: flex;">
+<div class="w-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
+<picture><source srcset="img/7.webp" type="image/webp"/><img alt="Coastal Tour Taxi in Gokarna - Bushra Tours &amp; Travels" class="w-full object-cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';" onload="this.parentElement.querySelector('.fallback-content').style.display='none';" src="img/7.jpg"/></picture>
+<div class="fallback-content w-full bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center" style="display: flex;">
 <div class="text-center text-white">
 <span class="text-6xl mb-4 block">🌊</span>
 <h3 class="text-2xl font-bold mb-2">Coastal Tours</h3>
@@ -720,9 +762,9 @@ img { max-width:100%; height:auto; display:block; }
 </div>
 <!-- Slide 8 -->
 <div class="slide">
-<div class="w-full h-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
-<picture><source srcset="webp_images/8.webp" type="image/webp"/><img alt="Heritage Tour Taxi in Gokarna - Bushra Tours &amp; Travels" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';" onload="this.parentElement.querySelector('.fallback-content').style.display='none';" src="./img/8.jpg"/></picture>
-<div class="fallback-content w-full h-full bg-gradient-to-br from-pink-400 to-rose-500 flex items-center justify-center" style="display: flex;">
+<div class="w-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
+<picture><source srcset="img/8.webp" type="image/webp"/><img alt="Heritage Tour Taxi in Gokarna - Bushra Tours &amp; Travels" class="w-full object-cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';" onload="this.parentElement.querySelector('.fallback-content').style.display='none';" src="img/8.jpg"/></picture>
+<div class="fallback-content w-full bg-gradient-to-br from-pink-400 to-rose-500 flex items-center justify-center" style="display: flex;">
 <div class="text-center text-white">
 <span class="text-6xl mb-4 block">🏰</span>
 <h3 class="text-2xl font-bold mb-2">Heritage Sites</h3>
@@ -733,9 +775,9 @@ img { max-width:100%; height:auto; display:block; }
 </div>
 <!-- Slide 9 -->
 <div class="slide">
-<div class="w-full h-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
-<picture><source srcset="webp_images/9.webp" type="image/webp"/><img alt="Nature Tour Taxi in Gokarna - Bushra Tours &amp; Travels" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';" onload="this.parentElement.querySelector('.fallback-content').style.display='none';" src="./img/9.jpg"/></picture>
-<div class="fallback-content w-full h-full bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center" style="display: flex;">
+<div class="w-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
+<picture><source srcset="img/9.webp" type="image/webp"/><img alt="Nature Tour Taxi in Gokarna - Bushra Tours &amp; Travels" class="w-full object-cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';" onload="this.parentElement.querySelector('.fallback-content').style.display='none';" src="img/9.jpg"/></picture>
+<div class="fallback-content w-full bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center" style="display: flex;">
 <div class="text-center text-white">
 <span class="text-6xl mb-4 block">🌿</span>
 <h3 class="text-2xl font-bold mb-2">Nature Tours</h3>
@@ -746,9 +788,9 @@ img { max-width:100%; height:auto; display:block; }
 </div>
 <!-- Slide 10 -->
 <div class="slide">
-<div class="w-full h-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
-<picture><source srcset="webp_images/10.webp" type="image/webp"/><img alt="Premium Taxi Service in Gokarna - Bushra Tours &amp; Travels" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';" onload="this.parentElement.querySelector('.fallback-content').style.display='none';" src="./img/10.jpg"/></picture>
-<div class="fallback-content w-full h-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center" style="display: flex;">
+<div class="w-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
+<picture><source srcset="img/10.webp" type="image/webp"/><img alt="Premium Taxi Service in Gokarna - Bushra Tours &amp; Travels" class="w-full object-cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';" onload="this.parentElement.querySelector('.fallback-content').style.display='none';" src="img/10.jpg"/></picture>
+<div class="fallback-content w-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center" style="display: flex;">
 <div class="text-center text-white">
 <span class="text-6xl mb-4 block">⭐</span>
 <h3 class="text-2xl font-bold mb-2">Premium Service</h3>
@@ -759,12 +801,12 @@ img { max-width:100%; height:auto; display:block; }
 </div>
 <!-- Navigation Arrows -->
 <button class="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-2 sm:p-3 rounded-full hover:bg-white/30 transition-all duration-300" onclick="changeSlide(-1)">
-<svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<svg class="w-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
 <path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
 </button>
 <button class="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-2 sm:p-3 rounded-full hover:bg-white/30 transition-all duration-300" onclick="changeSlide(1)">
-<svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<svg class="w-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
 <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
 </button>
@@ -1044,7 +1086,7 @@ img { max-width:100%; height:auto; display:block; }
 <div class="sm:col-span-2 lg:col-span-2">
 <div class="flex items-center mb-4 sm:mb-6">
 <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl mr-3 sm:mr-4 overflow-hidden">
-<picture><source srcset="webp_images/b.webp" type="image/webp"/><img alt="Bushra Tours &amp; Travels Logo" class="w-full h-full object-cover" onerror="this.style.display='none'; this.parentElement.innerHTML='&lt;div class=\'w-full h-full bg-gradient-to-br from-blue-600 to-cyan-500 rounded-xl flex items-center justify-center\'&gt;&lt;svg class=\'w-5 h-5 sm:w-6 sm:h-6 text-white\' fill=\'none\' stroke=\'currentColor\' viewBox=\'0 0 24 24\'&gt;&lt;path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'2\' d=\'M13 10V3L4 14h7v7l9-11h-7z\'&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;';" src="img/b.png"/></picture>
+<picture><source srcset="img/b.webp" type="image/webp"/><img alt="Bushra Tours &amp; Travels Logo" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'; this.parentElement.innerHTML='&lt;div class=\'w-full h-full bg-gradient-to-br from-blue-600 to-cyan-500 rounded-xl flex items-center justify-center\'&gt;&lt;svg class=\'w-5 h-5 sm:w-6 sm:h-6 text-white\' fill=\'none\' stroke=\'currentColor\' viewBox=\'0 0 24 24\'&gt;&lt;path stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'2\' d=\'M13 10V3L4 14h7v7l9-11h-7z\'&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;';" src="img/b.png"/></picture>
 </div>
 <h3 class="text-xl sm:text-2xl font-bold">Bushra Tours &amp; Travels</h3>
 </div>
