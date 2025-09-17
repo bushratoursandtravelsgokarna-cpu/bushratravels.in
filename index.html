@@ -14,6 +14,9 @@ img { max-width:100%; height:auto; display:block; }
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
+<link href="img/favicon.png" rel="icon" type="image/png"/>
+<link href="img/favicon.png" rel="shortcut icon" type="image/png"/>
+<link href="img/favicon.png" rel="apple-touch-icon"/>
 <script defer="True" src="https://cdn.tailwindcss.com"></script>
 <style>
         .hero-pattern {
@@ -160,35 +163,30 @@ img { max-width:100%; height:auto; display:block; }
     <meta property="og:title" content="Taxi in Gokarna | Bushra Tours &amp; Travels - 24/7 Cab Service"/>
     <meta property="og:description" content="Book reliable taxi service in Gokarna with Bushra Tours &amp; Travels. 24/7 cab booking for temples, beaches, airport transfers and sightseeing."/>
     <meta property="og:url" content="https://bushratravels.in/"/>
-    <meta property="og:image" content="https://bushratravels.in/img/b.webp"/>
+    <meta property="og:image" content="https://bushratravels.inimg/b.webp"/>
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:title" content="Taxi in Gokarna | Bushra Tours &amp; Travels"/>
     <meta name="twitter:description" content="24/7 taxi & cab service in Gokarna. Airport transfers, sightseeing, packages & more."/>
-    <meta name="twitter:image" content="https://bushratravels.in/img/b.webp"/>
+    <meta name="twitter:image" content="https://bushratravels.inimg/b.webp"/>
     
 
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
-<link rel="manifest" href="/site.webmanifest">
-
-
 <style>
-#gallery picture, #gallery img {
-  display:block;
+#slideshow-container {
   width:100%;
-  height:100%;
-  object-fit:cover;
+  height:400px;
+  position:relative;
 }
-#gallery .floating-card {
-  min-height: 250px;
+#slideshow-container .slide {width:100%; height:100%;}
+#slideshow-container img {width:100%; height:100%; object-fit:cover;}
+@media(max-width:768px){
+  #slideshow-container{height:250px;}
 }
-@media (min-width:768px){
-  #gallery .floating-card {min-height:350px;}
+
+#gallery .floating-card {min-height:250px;}
+@media(min-width:768px){
+  #gallery .floating-card{min-height:350px;}
 }
+#gallery img {width:100%; height:100%; object-fit:cover;}
 </style>
 
 </head>
@@ -1262,7 +1260,7 @@ Please confirm availability and pricing.`;
   "@context": "https://schema.org",
   "@type": "TaxiService",
   "name": "Bushra Tours & Travels",
-  "image": "https://bushratravels.in/img/b.png",
+  "image": "https://bushratravels.inimg/b.png",
   "@id": "https://bushratravels.in",
   "url": "https://bushratravels.in",
   "telephone": "+91-63620-66201",
