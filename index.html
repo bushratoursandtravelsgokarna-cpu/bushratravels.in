@@ -644,241 +644,169 @@
         </div>
     </section>
 
-   <!-- Gallery Section -->
+ <!-- Gallery Section — 30-image slideshow (no descriptions, no onerror fallback) -->
 <section id="gallery" class="section-spacing bg-gradient-to-br from-blue-50 via-white to-cyan-50 relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-r from-blue-100/20 to-cyan-100/20"></div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="text-center mb-12 sm:mb-16 lg:mb-20">
-            <div class="inline-block bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full px-4 sm:px-6 py-2 mb-6 sm:mb-8">
-                <span class="text-white font-semibold text-sm sm:text-base">📸 Gallery</span>
-            </div>
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold gradient-text mb-4 sm:mb-6">Our Journey in Pictures</h2>
-            <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto px-4">Explore the beautiful destinations and memorable moments from our taxi services in Gokarna</p>
-        </div>
-        
-        <!-- Slideshow Container -->
-        <div class="relative max-w-4xl mx-auto mb-8 sm:mb-12">
-            <div class="floating-card rounded-2xl sm:rounded-3xl overflow-hidden relative">
-                <div id="slideshow-container" class="relative h-64 sm:h-80 md:h-96 lg:h-[400px]">
-                    
-                    <!-- Slide 1 -->
-                    <div class="slide active">
-                        <div class="w-full h-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
-                            <img src="./img/1.jpg" alt="Taxi in Gokarna - Bushra Tours & Travels Hatchback Cab" class="w-full h-full object-cover"
-                                 onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';"
-                                 onload="this.parentElement.querySelector('.fallback-content').style.display='none';">
-                            <div class="fallback-content w-full h-full bg-gradient-to-br from-blue-400 to-cyan-500 flex items-center justify-center" style="display: flex;">
-                                <div class="text-center text-white">
-                                    <span class="text-6xl mb-4 block">🚗</span>
-                                    <h3 class="text-2xl font-bold mb-2">Bushra Tours & Travels</h3>
-                                    <p class="text-lg">Professional taxi service in Gokarna</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 2 -->
-                    <div class="slide">
-                        <div class="w-full h-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
-                            <img src="./img/2.jpg" alt="Gokarna Beach Tour Taxi Service - Bushra Tours & Travels" class="w-full h-full object-cover"
-                                 onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';"
-                                 onload="this.parentElement.querySelector('.fallback-content').style.display='none';">
-                            <div class="fallback-content w-full h-full bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center" style="display: flex;">
-                                <div class="text-center text-white">
-                                    <span class="text-6xl mb-4 block">🏖️</span>
-                                    <h3 class="text-2xl font-bold mb-2">Beach Tours</h3>
-                                    <p class="text-lg">Explore beautiful Gokarna beaches</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 3 -->
-                    <div class="slide">
-                        <div class="w-full h-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
-                            <img src="./img/3.jpg" alt="Temple Visit Taxi in Gokarna - Bushra Tours & Travels" class="w-full h-full object-cover"
-                                 onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';"
-                                 onload="this.parentElement.querySelector('.fallback-content').style.display='none';">
-                            <div class="fallback-content w-full h-full bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center" style="display: flex;">
-                                <div class="text-center text-white">
-                                    <span class="text-6xl mb-4 block">🏛️</span>
-                                    <h3 class="text-2xl font-bold mb-2">Temple Visits</h3>
-                                    <p class="text-lg">Sacred temples of Gokarna</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 4 -->
-                    <div class="slide">
-                        <div class="w-full h-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
-                            <img src="./img/4.jpg" alt="Airport Taxi in Gokarna - Bushra Tours & Travels" class="w-full h-full object-cover"
-                                 onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';"
-                                 onload="this.parentElement.querySelector('.fallback-content').style.display='none';">
-                            <div class="fallback-content w-full h-full bg-gradient-to-br from-green-400 to-emerald-500 flex items-center justify-center" style="display: flex;">
-                                <div class="text-center text-white">
-                                    <span class="text-6xl mb-4 block">✈️</span>
-                                    <h3 class="text-2xl font-bold mb-2">Airport Transfers</h3>
-                                    <p class="text-lg">Reliable airport pickup & drop</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 5 -->
-                    <div class="slide">
-                        <div class="w-full h-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
-                            <img src="./img/5.jpg" alt="Sightseeing Taxi in Gokarna - Bushra Tours & Travels" class="w-full h-full object-cover"
-                                 onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';"
-                                 onload="this.parentElement.querySelector('.fallback-content').style.display='none';">
-                            <div class="fallback-content w-full h-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center" style="display: flex;">
-                                <div class="text-center text-white">
-                                    <span class="text-6xl mb-4 block">🌄</span>
-                                    <h3 class="text-2xl font-bold mb-2">Sightseeing Tours</h3>
-                                    <p class="text-lg">Discover scenic destinations</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 6 -->
-                    <div class="slide">
-                        <div class="w-full h-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
-                            <img src="./img/6.jpg" alt="Group Travel Taxi in Gokarna - Bushra Tours & Travels" class="w-full h-full object-cover"
-                                 onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';"
-                                 onload="this.parentElement.querySelector('.fallback-content').style.display='none';">
-                            <div class="fallback-content w-full h-full bg-gradient-to-br from-teal-400 to-blue-500 flex items-center justify-center" style="display: flex;">
-                                <div class="text-center text-white">
-                                    <span class="text-6xl mb-4 block">🚐</span>
-                                    <h3 class="text-2xl font-bold mb-2">Group Travel</h3>
-                                    <p class="text-lg">Comfortable group transportation</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 7 -->
-                    <div class="slide">
-                        <div class="w-full h-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
-                            <img src="./img/7.jpg" alt="Coastal Tour Taxi in Gokarna - Bushra Tours & Travels" class="w-full h-full object-cover"
-                                 onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';"
-                                 onload="this.parentElement.querySelector('.fallback-content').style.display='none';">
-                            <div class="fallback-content w-full h-full bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center" style="display: flex;">
-                                <div class="text-center text-white">
-                                    <span class="text-6xl mb-4 block">🌊</span>
-                                    <h3 class="text-2xl font-bold mb-2">Coastal Tours</h3>
-                                    <p class="text-lg">Explore the beautiful coastline</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 8 -->
-                    <div class="slide">
-                        <div class="w-full h-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
-                            <img src="./img/8.jpg" alt="Heritage Tour Taxi in Gokarna - Bushra Tours & Travels" class="w-full h-full object-cover"
-                                 onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';"
-                                 onload="this.parentElement.querySelector('.fallback-content').style.display='none';">
-                            <div class="fallback-content w-full h-full bg-gradient-to-br from-pink-400 to-rose-500 flex items-center justify-center" style="display: flex;">
-                                <div class="text-center text-white">
-                                    <span class="text-6xl mb-4 block">🏰</span>
-                                    <h3 class="text-2xl font-bold mb-2">Heritage Sites</h3>
-                                    <p class="text-lg">Visit historical landmarks</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 9 -->
-                    <div class="slide">
-                        <div class="w-full h-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
-                            <img src="./img/9.jpg" alt="Nature Tour Taxi in Gokarna - Bushra Tours & Travels" class="w-full h-full object-cover"
-                                 onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';"
-                                 onload="this.parentElement.querySelector('.fallback-content').style.display='none';">
-                            <div class="fallback-content w-full h-full bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center" style="display: flex;">
-                                <div class="text-center text-white">
-                                    <span class="text-6xl mb-4 block">🌿</span>
-                                    <h3 class="text-2xl font-bold mb-2">Nature Tours</h3>
-                                    <p class="text-lg">Experience natural beauty</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 10 -->
-                    <div class="slide">
-                        <div class="w-full h-full flex items-center justify-center bg-gray-100 rounded-2xl overflow-hidden">
-                            <img src="./img/10.jpg" alt="Premium Taxi Service in Gokarna - Bushra Tours & Travels" class="w-full h-full object-cover"
-                                 onerror="this.style.display='none'; this.parentElement.querySelector('.fallback-content').style.display='flex';"
-                                 onload="this.parentElement.querySelector('.fallback-content').style.display='none';">
-                            <div class="fallback-content w-full h-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center" style="display: flex;">
-                                <div class="text-center text-white">
-                                    <span class="text-6xl mb-4 block">⭐</span>
-                                    <h3 class="text-2xl font-bold mb-2">Premium Service</h3>
-                                    <p class="text-lg">Luxury travel experience</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Navigation Arrows -->
-                    <button onclick="changeSlide(-1)" class="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-2 sm:p-3 rounded-full hover:bg-white/30 transition-all duration-300">
-                        <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-                        </svg>
-                    </button>
-                    <button onclick="changeSlide(1)" class="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-2 sm:p-3 rounded-full hover:bg-white/30 transition-all duration-300">
-                        <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                        </svg>
-                    </button>
-                </div>
-
-                <!-- Dots Indicator -->
-                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                    <button onclick="currentSlide(1)" class="dot active"></button>
-                    <button onclick="currentSlide(2)" class="dot"></button>
-                    <button onclick="currentSlide(3)" class="dot"></button>
-                    <button onclick="currentSlide(4)" class="dot"></button>
-                    <button onclick="currentSlide(5)" class="dot"></button>
-                    <button onclick="currentSlide(6)" class="dot"></button>
-                    <button onclick="currentSlide(7)" class="dot"></button>
-                    <button onclick="currentSlide(8)" class="dot"></button>
-                    <button onclick="currentSlide(9)" class="dot"></button>
-                    <button onclick="currentSlide(10)" class="dot"></button>
-                </div>
-
-                <!-- Add inside index.html -->
-                <style>
-                  .dot {
-                    all: unset;
-                    width: 12px !important;
-                    height: 12px !important;
-                    border-radius: 50% !important;
-                    background: rgba(255, 255, 255, 0.5) !important;
-                    display: inline-block !important;
-                    cursor: pointer !important;
-                    flex-shrink: 0 !important;
-                    transition: background 0.3s ease, transform 0.3s ease;
-                  }
-                  .dot:hover {
-                    background: rgba(255, 255, 255, 0.8) !important;
-                  }
-                  .dot.active {
-                    background: #fff !important;
-                    transform: scale(1.3) !important;
-                  }
-                </style>
-            </div>
-        </div>
-
-        <div class="text-center px-4">
-            <p class="text-gray-600 mb-6 text-base sm:text-lg">Want to create your own memories? Book your taxi service today!</p>
-            <a href="https://wa.me/916362066201?text=Hello%20Bushra%20Tours%20%26%20Travels%2C%20I%20want%20to%20book%20a%20taxi" class="inline-block bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-2xl font-semibold hover:shadow-lg transition-all duration-300 text-sm sm:text-base">Book Your Journey</a>
-        </div>
+  <div class="absolute inset-0 bg-gradient-to-r from-blue-100/20 to-cyan-100/20"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="text-center mb-12 sm:mb-16 lg:mb-20">
+      <div class="inline-block bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full px-4 sm:px-6 py-2 mb-6 sm:mb-8">
+        <span class="text-white font-semibold text-sm sm:text-base">📸 Gallery</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold gradient-text mb-4 sm:mb-6">Our Journey in Pictures</h2>
+      <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto px-4">Explore the beautiful destinations and memorable moments from our taxi services in Gokarna</p>
     </div>
-</section>
 
+    <div class="relative max-w-4xl mx-auto mb-8 sm:mb-12">
+      <div class="floating-card rounded-2xl sm:rounded-3xl overflow-hidden relative">
+        <!-- slideshow viewport -->
+        <div id="slideshow-container" class="relative h-64 sm:h-80 md:h-96 lg:h-[400px] bg-gray-100">
+          <!-- slides and dots will be injected by JS -->
+        </div>
+
+        <!-- navigation arrows -->
+        <button id="prevBtn" class="nav-arrow left-2 sm:left-4" aria-label="Previous slide">
+          <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+        </button>
+        <button id="nextBtn" class="nav-arrow right-2 sm:right-4" aria-label="Next slide">
+          <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+
+        <!-- dots container -->
+        <div id="dots-container" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 flex-wrap max-w-[90%] justify-center"></div>
+
+        <style>
+          /* container + slides */
+          #slideshow-container { position: relative; overflow: hidden; }
+          .slide { position: absolute; inset: 0; opacity: 0; transform: scale(1.02); transition: opacity 400ms ease, transform 400ms ease; display: flex; align-items: center; justify-content: center; }
+          .slide.active { opacity: 1; transform: scale(1); z-index: 2; }
+          .slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+          /* nav arrows */
+          .nav-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255,255,255,0.18);
+            backdrop-filter: blur(6px);
+            color: white;
+            padding: 0.5rem;
+            border-radius: 9999px;
+            border: none;
+            cursor: pointer;
+            transition: background 200ms ease, transform 150ms ease;
+            z-index: 5;
+          }
+          .nav-arrow:hover { background: rgba(255,255,255,0.32); transform: translateY(-50%) scale(1.03); }
+          .nav-arrow.left-2 { left: 0.5rem; }
+          .nav-arrow.right-2 { right: 0.5rem; }
+
+          /* dots */
+          .dot {
+            all: unset;
+            width: 12px;
+            height: 12px;
+            border-radius: 9999px;
+            background: rgba(255,255,255,0.5);
+            display: inline-block;
+            cursor: pointer;
+            transition: background 0.25s ease, transform 0.25s ease;
+            margin: 4px;
+          }
+          .dot:hover { background: rgba(255,255,255,0.85); transform: scale(1.1); }
+          .dot.active { background: #fff; transform: scale(1.3); }
+
+          /* responsive tweaks for smaller screens */
+          @media (max-width: 640px) {
+            .nav-arrow { padding: 0.4rem; }
+          }
+        </style>
+
+      </div>
+    </div>
+
+    <div class="text-center px-4">
+      <p class="text-gray-600 mb-6 text-base sm:text-lg">Want to create your own memories? Book your taxi service today!</p>
+      <a href="https://wa.me/916362066201?text=Hello%20Bushra%20Tours%20%26%20Travels%2C%20I%20want%20to%20book%20a%20taxi" class="inline-block bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-2xl font-semibold hover:shadow-lg transition-all duration-300 text-sm sm:text-base">Book Your Journey</a>
+    </div>
+  </div>
+
+  <!-- JS: generates 30 slides (img/1.png ... img/30.png), dots, and slide control -->
+  <script>
+    (function(){
+      const total = 30;
+      const container = document.getElementById('slideshow-container');
+      const dotsContainer = document.getElementById('dots-container');
+
+      // create slides
+      for (let i = 1; i <= total; i++) {
+        const slide = document.createElement('div');
+        slide.className = 'slide';
+        slide.dataset.index = i;
+        const img = document.createElement('img');
+        // path: img/1.png ... img/30.png
+        img.src = `./img/${i}.png`;
+        img.alt = `Slide ${i}`;
+        slide.appendChild(img);
+        container.appendChild(slide);
+
+        // create dot
+        const dot = document.createElement('button');
+        dot.className = 'dot';
+        dot.setAttribute('aria-label', 'Go to slide ' + i);
+        dot.onclick = ((n) => () => currentSlide(n))(i);
+        dotsContainer.appendChild(dot);
+      }
+
+      // state
+      let current = 1;
+      const slides = container.querySelectorAll('.slide');
+      const dots = dotsContainer.querySelectorAll('.dot');
+
+      function showSlide(n) {
+        if (n < 1) n = total;
+        if (n > total) n = 1;
+        current = n;
+        slides.forEach((s, idx) => {
+          s.classList.toggle('active', idx === (n - 1));
+        });
+        dots.forEach((d, idx) => {
+          d.classList.toggle('active', idx === (n - 1));
+        });
+      }
+
+      // navigation helpers
+      window.changeSlide = function(delta){
+        showSlide(current + delta);
+        resetAutoplay();
+      };
+      window.currentSlide = function(n){
+        showSlide(n);
+        resetAutoplay();
+      };
+
+      // prev/next buttons
+      document.getElementById('prevBtn').addEventListener('click', () => changeSlide(-1));
+      document.getElementById('nextBtn').addEventListener('click', () => changeSlide(1));
+
+      // autoplay (optional) — 5s
+      let autoplayId = null;
+      function startAutoplay(){
+        autoplayId = setInterval(() => showSlide(current + 1), 5000);
+      }
+      function resetAutoplay(){
+        if (autoplayId) { clearInterval(autoplayId); startAutoplay(); }
+      }
+
+      // init
+      showSlide(1);
+      startAutoplay();
+    })();
+  </script>
+</section>
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="section-spacing bg-white">
@@ -1350,6 +1278,7 @@ Please confirm availability and pricing.`;
 
 
 </html>
+
 
 
 
